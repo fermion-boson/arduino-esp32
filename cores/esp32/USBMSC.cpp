@@ -15,7 +15,7 @@
 #include "USBMSC.h"
 
 #if SOC_USB_OTG_SUPPORTED
-#if CONFIG_TINYUSB_MSC_ENABLED
+#if CONFIG_ARDUINO_TINYUSB_MSC_ENABLED
 
 #include "esp32-hal-tinyusb.h"
 

@@ -52,7 +52,7 @@ void printRunningTasks(Print &printer) {
     printer.printf(
       "Tasks: %u"
 #if CONFIG_FREERTOS_GENERATE_RUN_TIME_STATS
-      ", Runtime: %lus, Period: %luus"
+      ", Runtime: %llus, Period: %lluus"
 #endif
       "\n",
       uxArraySize
@@ -83,7 +83,7 @@ void printRunningTasks(Print &printer) {
       printer.printf(
         "%3u\t%16s"
 #if CONFIG_FREERTOS_GENERATE_RUN_TIME_STATS
-        "\t%3lu%%"
+        "\t%3llu%%"
 #endif
         "\t%4u\t%5lu"
 #if CONFIG_FREERTOS_VTASKLIST_INCLUDE_COREID
